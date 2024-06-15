@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.months {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px
+}
+
+.month {
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+}
