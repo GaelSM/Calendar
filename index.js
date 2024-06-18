@@ -38,7 +38,7 @@ function insertWeek(element) {
   for(let i = 0; i < NAME_OF_DAYS.length; i++) {
     const day = document.createElement("li")
     day.textContent = NAME_OF_DAYS[i]
-    element.appendChild(day)
+    element.append(day)
   }
 }
 
@@ -49,7 +49,7 @@ function insertDays(element, currentMonth) {
 
     if(j === 1) day.style.gridColumnStart = date.getDay() + 1
 
-    element.appendChild(day)
+    element.append(day)
   }
 }
 
@@ -65,10 +65,10 @@ for(let currentMonth = 0; currentMonth < NUMBER_OF_MONTHS; currentMonth++) {
   insertWeek(days)
   insertDays(days, currentMonth)
 
-  monthsElement.appendChild(month)
+  monthsElement.append(month)
 
-  month.appendChild(monthName)
-  month.appendChild(days)
+  month.append(monthName)
+  month.append(days)
 
   date.setMonth(date.getMonth() + 1)
 }
